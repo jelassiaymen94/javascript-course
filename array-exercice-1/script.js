@@ -71,11 +71,27 @@ console.log(itCompanies);
 } */
 
 for (let i = 0; i < itCompanies.length; i++) {
-	if (!!itCompanies[i].match(/n/g)) {
-		console.log(itCompanies[i]);
-	}
-
-	/* console.log(itCompanies[i].match(/a/g)); */
+	console.log(itCompanies[i].match(/o+/g));
 } /* Filter out companies which have more than one 'o' without the filter method */
 
-console.log(document.body);
+console.log(itCompanies.sort()); // Sort the array using sort() method
+console.log(itCompanies.reverse()); // Reverse the array using reverse() method
+console.log(itCompanies.slice(3)); // Slice out the first 3 companies from the array
+
+/* for (let i = 0; i < 3; i++) {
+	itCompanies.pop();
+} */
+
+console.log(itCompanies.slice(-3)); // Slice out the last 3 companies from the array
+
+itCompanies.splice(0, 1); // Remove the first IT company from the array
+console.log(itCompanies);
+
+itCompanies.splice(itCompanies.length / 2 - 1, 2); // Remove the middle IT company or companies from the array
+console.log(itCompanies);
+
+itCompanies.splice(itCompanies.length - 1, 1); // Remove the last IT company from the array
+console.log(itCompanies);
+
+itCompanies.splice(0, itCompanies.length); // Remove all IT companies
+console.log(itCompanies);

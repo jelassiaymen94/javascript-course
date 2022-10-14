@@ -54,3 +54,15 @@ arrayLength % 2 == 0
 Math.trunc(ages.reduce((a, b) => a + b) / arrayLength);
 
 console.log(Math.abs(min - ages[middle]) == Math.abs(max - ages[middle]));
+
+let middleIndexCountryy = Math.trunc(countryList.length / 2);
+console.log(countryList[middleIndexCountryy]);
+
+let middleIndexCountry = Math.floor(countryList.length / 2);
+let newCountries = [
+	countryList.slice(0, middleIndexCountry),
+	countryList.slice(middleIndexCountry),
+];
+if (countryList.length % 2 == 1) {
+	newCountries[0].push("Brazil");
+}

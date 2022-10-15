@@ -1,6 +1,6 @@
 //1
 
-/* let score = prompt("Enter your score:");
+let score = prompt("Enter your score:");
 if (score >= 0 && score < 49) {
 	console.log("You got F");
 } else if (score >= 50 && score <= 59) {
@@ -42,7 +42,7 @@ if (weekDay == "saturday" || weekDay == "sunday") {
 	console.log(`${weekDay} is a work day`);
 } else {
 	console.log("invalid weekDay");
-} */
+}
 
 //4
 
@@ -61,3 +61,4 @@ if (weeekDay == "saturday" || weeekDay == "sunday") {
 } else {
 	console.log("invalid weekDay");
 }
+
